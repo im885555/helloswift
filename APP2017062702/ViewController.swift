@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,
+UIImagePickerControllerDelegate,
+UINavigationControllerDelegate {
 
+    @IBOutlet weak var ImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func Save(_ sender: UIButton) {
+        
+    }
 
+    @IBAction func Camera(_ sender: UIButton) {
+    }
+    
+    @IBAction func OpenPhotos(_ sender: UIButton) {
+        
+    }
 }
 
